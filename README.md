@@ -3,7 +3,7 @@
 
 Deis (pronounced DAY-iss) Workflow is an open source Platform as a Service (PaaS) that adds a developer-friendly layer to any [Kubernetes](http://kubernetes.io) cluster, making it easy to deploy and manage applications on your own servers.
 
-For more information about the Deis Workflow, please visit the main project page at https://github.com/deis/workflow.
+For more information about the Deis Workflow, please visit the main project page at https://github.com/deisthree/workflow.
 
 We welcome your input! If you have feedback, please [submit an issue][issues]. If you'd like to participate in development, please read the "Development" section below and [submit a pull request][prs].
 
@@ -31,7 +31,7 @@ $ kubectl --namespace=deis get deployment deis-controller -o yaml > ~/active-dei
 3) Run the migration service to create a helm release object based on the current workflow install. If not otherwise specified, the workflow_release_name will be `deis-workflow` and workflow_version will be `v2.7.0`.
 
 ```shell
-$ git clone https://github.com/deis/workflow-migration.git
+$ git clone https://github.com/deisthree/workflow-migration.git
 $ cd workflow-migration
 $ helm install ./charts/workflow-migration/ --set workflow_release_name=<optional release name for the helm>,workflow_version=<optional current version of workflow>
 ```
@@ -95,6 +95,6 @@ deis-router-1357759721-a3ard             1/1       Running   0          5m
 deis-workflow-manager-2654760652-kitf9   1/1       Running   0          5m
 ```
 
-[issues]: https://github.com/deis/workflow/issues
-[prs]: https://github.com/deis/workflow/pulls
-[v2.18]: https://github.com/deis/workflow/releases/tag/v2.18.0
+[issues]: https://github.com/deisthree/workflow/issues
+[prs]: https://github.com/deisthree/workflow/pulls
+[v2.18]: https://github.com/deisthree/workflow/releases/tag/v2.18.0
